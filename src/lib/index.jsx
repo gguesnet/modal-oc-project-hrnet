@@ -9,16 +9,11 @@ export default function Modal({ title, text, button, toggleOpen, isOpen }) {
         <p>{text}</p>
       </div>
       <footer className="modal-footer">
-        <button id="love-it" type="button" onClick={() => toggleOpen(false)}>
+        <button type="button" onClick={() => toggleOpen(false)}>
           {button}
         </button>
       </footer>
-      <button
-        id="close"
-        className="close"
-        type="button"
-        onClick={() => toggleOpen(false)}
-      >
+      <button className="close" type="button" onClick={() => toggleOpen(false)}>
         ×
       </button>
     </dialog>
